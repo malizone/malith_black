@@ -1,0 +1,63 @@
+/*--
+/*  4.5 - Achieved CSS
+/*----------------------------------------*/
+
+// Achieved Year 
+.achieved-year{
+    padding-top: 57px;
+}
+
+// Year Text 
+.year-text{
+    margin-top: 30px;
+
+    & p{
+        font-family: $custom-font-family;
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+    }
+}
+
+// Achieved Item 
+.achieved-item{
+    margin-top: 30px;
+
+    & .sub-title{
+        font-family: $custom-font-family;
+        font-size: 18px;
+        font-weight: 400;
+        color: $body-color;
+
+        @media #{$small-mobile}{
+            font-size: 14px;
+        }
+    }
+    & .title{
+        & a{
+            font-size: 36px;
+            font-weight: 700;
+            color: rgba($white, .5);
+            transition: $transition-base;
+
+            @media #{$small-mobile}{
+                font-size: 24px;
+            }
+
+            & span{
+                color: $white;
+            }
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,177 @@
+/*----------------------------------------*/
+/*  06. Footer CSS
+/*----------------------------------------*/
+
+// Footer Info Box 
+.footer-info-box{
+    padding: 275px 0 195px; 
+
+    @media #{$desktop-device}{
+        padding-top: 230px;
+        padding-bottom: 150px;
+    }
+
+    @media #{$tablet-device}{
+        padding-top: 200px;
+        padding-bottom: 120px;
+    }
+
+    @media #{$large-mobile}{
+        padding-top: 180px;
+        padding-bottom: 100px;
+    }
+
+    @media #{$small-mobile}{
+        padding-top: 150px;
+        padding-bottom: 70px;
+    }
+
+    & .title{
+        font-size: 24px;
+        font-family: $custom-font-family;
+        font-weight: 400;
+        color: rgba($white, 0.5);
+
+        @media #{$large-mobile}{
+            font-size: 20px;
+        }
+        @media #{$small-mobile}{
+            font-size: 16px;
+        }
+    }
+    & .mail{
+        & a{
+            font-size: 60px;
+            font-weight: 700;
+            color: $primary;
+            margin-top: 10px;
+            display: inline-block;
+            transition: $transition-base;
+
+            @media #{$large-mobile}{
+                font-size: 40px;
+            }
+
+            @media #{$small-mobile}{
+                font-size: 20px;
+            }
+
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+
+// Footer Copyright & Social 
+.footer-copyright-social{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    padding-top: 100px;
+
+    @media #{$large-mobile}{
+        display: block;
+        text-align: center;
+    }
+}
+
+// Footer Copyright
+.footer-copyright{
+    padding-bottom: 20px;
+    
+    & span{
+        color: $white;
+    }
+    & i{
+        color: $red;
+    }
+    & a{
+        color: $white;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+// Footer Social 
+.footer-social{
+    padding-bottom: 20px;
+
+    & .social{
+        display: flex;
+        
+        @media #{$large-mobile}{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        & li{
+            & + li{
+                margin-left: 35px;
+            }
+
+            & a{
+                font-size: 16px;
+
+                @media #{$tablet-device, $small-mobile}{
+                    font-size: 14px;
+                }
+                
+
+                &.twitter{
+                    color: #00ccff;
+                }
+                &.behance{
+                    color: #0066ff;
+                }
+                &.dribbble{
+                    color: #ff0066;
+                }
+                &.github{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+
+// Back to Top
+.back-to-top {
+	background-color: $dark;
+	color: $white;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	display: none;
+	text-align: center;
+	text-decoration: none;
+	transition: all 500ms ease-in-out;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	font-size: 24px;
+    z-index: 28;
+    box-shadow: 0 0 7px rgba($white, 0.1);
+
+    @media #{$small-mobile}{
+        right: 20px;
+        bottom: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+    }
+    
+    &:hover{
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+
+
+
